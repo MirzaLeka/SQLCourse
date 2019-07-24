@@ -1,5 +1,5 @@
 
-### Some of the common data types in SQL
+### Common data types in SQL
 
 #### Numbers
 * INT

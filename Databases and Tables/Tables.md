@@ -20,7 +20,7 @@ CREATE TABLE Tweets (
   Tweet VARCHAR(140), // Up to 140 characters per tweet
   Likes INT // Likes is a number
 );
-˙˙˙˙
+```
 
 Show all tables in Database
 
