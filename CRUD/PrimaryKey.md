@@ -8,9 +8,7 @@ Once you insert a field with an id of 1, you cannot insert another field and giv
 the same id. 
 What you can do is manually insert data for the id, but you don't have.
 
-Auto Increment
-
-You can auto increment id with each new insert.
+You can **auto increment** id with each new insert.
 
 **MYSQL**
 

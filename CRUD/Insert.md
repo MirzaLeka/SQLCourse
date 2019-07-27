@@ -1,7 +1,7 @@
 
 ### Insert data into table
 
-Simple insert
+**Simple insert**
 
 ```
 INSERT INTO Table_Name ( column1, column2 )
@@ -18,7 +18,7 @@ VALUES ( 'Goku', 40);
 
 Goku goes to name column. 40 goes to age. 
 
-Insert multiple 
+**Insert multiple** 
 
 ```
 INSERT INTO People ( name, age )
@@ -44,7 +44,7 @@ VALUES
 ;
 ```
 
-Dealing with Null
+**Dealing with Null**
 
 But if there was a third column, for example job, insrting two values
 out of three would mean that job column would have value of **NULL**.
@@ -64,7 +64,7 @@ CREATE TABLE People(
 )
 ```
 
-Default values
+**Default values**
 
 Now if we make an insert and leave off one of the fields we'll get a warning message
 saying that *age* field does not have a **default value**.
