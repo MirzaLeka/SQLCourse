@@ -17,7 +17,7 @@ CREATE TABLE employees (
     birth_date  DATE            NOT NULL,
     first_name  VARCHAR(14)     NOT NULL,
     last_name   VARCHAR(16)     NOT NULL,
-	  gender	VARCHAR(10)	NOT NULL CHECK (gender IN('M', 'F', 'Unknown')), /* Accepts only these values, like MYSQL Enum */
+    gender	VARCHAR(10)	NOT NULL CHECK (gender IN('M', 'F', 'Unknown')), /* Accepts only these values, like MYSQL Enum */
     hire_date   DATE            NOT NULL,
 );
 
@@ -66,6 +66,8 @@ CREATE TABLE salaries (
 
 ```
 
+Use the **ON DELETE CASCADE** option to specify whether you want rows deleted in a child table when corresponding rows are deleted in the parent table. If you do not specify cascading deletes, the default behavior of the database server prevents you from deleting data in a table if other tables reference it.
+
 ## Create Views
 
 ```sql
@@ -113,3 +115,6 @@ INSERT INTO employees VALUES ('1953-09-02','Georgi','Facello','M','1986-06-26'),
 ('1953-01-23','Lillian','Haddadi','M','1999-04-30'),
 ('1952-12-24','Mayuko','Warwick','M','1991-01-26');
 ```
+
+* [Foreign Key Constraint](https://www.w3schools.com/sql/sql_foreignkey.asp)
+* [SQL Reference keywords](https://www.w3schools.com/sql/sql_ref_keywords.asp)
