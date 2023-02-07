@@ -70,6 +70,8 @@ Use the **ON DELETE CASCADE** option to specify whether you want rows deleted in
 
 ## Create Views
 
+View is wrapped SQL query that can be seen as virtual table. View can be used within other queries, but cannot be queried to see what's inside (as you'd with tables)
+
 ```sql
 CREATE VIEW dept_emp_latest_date AS
     SELECT emp_no, MAX(from_date) AS from_date, MAX(to_date) AS to_date
@@ -115,6 +117,9 @@ INSERT INTO employees VALUES ('1953-09-02','Georgi','Facello','M','1986-06-26'),
 ('1953-01-23','Lillian','Haddadi','M','1999-04-30'),
 ('1952-12-24','Mayuko','Warwick','M','1991-01-26');
 ```
+## References
 
 * [Foreign Key Constraint](https://www.w3schools.com/sql/sql_foreignkey.asp)
 * [SQL Reference keywords](https://www.w3schools.com/sql/sql_ref_keywords.asp)
+* [Views in sql server](https://www.youtube.com/watch?v=VQpmOmZO2mo)
+* [SQL Views In 4 Minutes: Super Useful! Wow! Crazy! Amazing! I'm Crying Tears Of SQL Joy](https://www.youtube.com/watch?v=vLLkNI-vkV8)
