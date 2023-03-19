@@ -62,7 +62,8 @@ exec [dbo].[Get_Employee_By_Name] @EmployeeLastName = 'Facello'
 To rename a procedure we can use the build-in `sp_rename` function.
 
 ```sql
-exec sp_rename 'dbo.Count_Employees', 'dbo.CountAllEmployees'
+exec sp_rename 'dbo.Count_Employees', 'CountAllEmployees'
+-- the dbo. prefix will be added by sql server
 ```
 
 The procedure now has a new name.
