@@ -10,3 +10,9 @@
 ```sql
   select * from INFORMATION_SCHEMA.PARAMETERS
 ```
+
+## Using a built-in SP
+
+```sql
+EXEC sp_help 'dbo.<table-name>';
+```
